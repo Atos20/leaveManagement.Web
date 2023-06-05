@@ -47,7 +47,7 @@ namespace leaveManagement.Web.Migrations
                         column: x => x.LeaveTypeId,
                         principalTable: "LeaveTypes",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
