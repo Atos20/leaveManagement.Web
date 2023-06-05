@@ -10,6 +10,7 @@ public class ApplicationDbContext : IdentityDbContext<Employee>
     {
     }
 
-    public DbSet<Employee> Eployeed { get; set; }
+    public DbSet<LeaveType> LeaveTypes { get; set; }
+    public DbSet<LeaveAllocation> LeaveAllocations{ get; set; }
 }
 
